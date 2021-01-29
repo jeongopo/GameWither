@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".ui.home.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="30px"
+            android:layout_weight="1"
+            android:src="@drawable/whitelogo" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/intro_edittext"
+            android:ems="10"
+            android:hint="어떤 게임 위더 방을 찾으시나요?"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:textSize="14sp" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="50px"
+            android:layout_height="100px"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark"
+            android:scaleType="fitStart"
+            android:src="@drawable/serach_icon" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:text="위더 방 목록"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/home_refresh"
+            android:layout_width="80px"
+            android:layout_height="80px"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="90dp"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:scaleType="fitStart"
+            android:src="@drawable/refresh_icon" />
+
+        <Button
+            android:id="@+id/home_mkwith"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@drawable/intromain_btn"
+            android:text="위드 생성하기"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/home_withrecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="20dp" />
+
+</LinearLayout>

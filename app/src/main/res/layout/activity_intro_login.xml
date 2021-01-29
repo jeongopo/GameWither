@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".intro.IntroLoginActivity">
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="205dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/logo"
+        app:layout_constraintBottom_toTopOf="@+id/intrologin_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/intrologin_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="35dp"
+        android:width="800px"
+        android:background="@drawable/intro_edittext"
+        android:ems="10"
+        android:hint="비밀번호"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textColor="#000000"
+        android:textColorHint="#888888"
+        app:layout_constraintBottom_toTopOf="@+id/intrologin_login"
+        app:layout_constraintStart_toStartOf="@+id/intrologin_id"
+        app:layout_constraintTop_toBottomOf="@+id/intrologin_id" />
+
+    <EditText
+        android:id="@+id/intrologin_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="19dp"
+        android:width="800px"
+        android:background="@drawable/intro_edittext"
+        android:ems="10"
+        android:hint="이메일아이디"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:textColor="#000000"
+        android:textColorHint="#888888"
+        app:layout_constraintBottom_toTopOf="@+id/intrologin_pass"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+    <Button
+        android:id="@+id/intrologin_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="99dp"
+        android:width="800px"
+        android:background="@drawable/intromain_btn"
+        android:text="로그인"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/intrologin_facebook"
+        app:layout_constraintStart_toStartOf="@+id/intrologin_pass"
+        app:layout_constraintTop_toBottomOf="@+id/intrologin_pass" />
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/intrologin_facebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="148dp"
+        android:width="800px"
+        android:background="@drawable/intromain_btn"
+        android:text="페이스북으로 로그인"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/intrologin_login" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

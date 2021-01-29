@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".ui.home.MakeWithActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="30px"
+            android:layout_weight="1"
+            android:src="@drawable/whitelogo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="8"
+            android:text="위드 생성하기"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="50dp">
+
+        <EditText
+            android:id="@+id/make_gamename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#00BCD4"
+            android:textColor="#000000"
+            android:ems="10"
+            android:hint="게임을 선택하세요"
+            android:inputType="textPersonName"
+            android:shadowColor="#00BCD4"
+            android:textColorHighlight="@color/colorPrimaryDark"
+            android:textColorHint="@color/hintcolor"
+            android:textColorLink="@color/colorPrimaryDark"
+            tools:layout_editor_absoluteX="79dp"
+            tools:layout_editor_absoluteY="125dp" />
+
+        <EditText
+            android:id="@+id/make_gameid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#00BCD4"
+            android:textColor="#000000"
+            android:ems="10"
+            android:hint="게임 대표 닉네임/ID"
+            android:inputType="textPersonName"
+            android:shadowColor="#00BCD4"
+            android:textColorHighlight="@color/colorPrimaryDark"
+            android:textColorHint="@color/hintcolor"
+            android:textColorLink="@color/colorPrimaryDark"
+            tools:layout_editor_absoluteX="79dp"
+            tools:layout_editor_absoluteY="125dp" />
+
+        <EditText
+            android:id="@+id/make_withtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#00BCD4"
+            android:textColor="#000000"
+            android:ems="10"
+            android:hint="위드 방 이름을 입력하세요 (10자 이하)"
+            android:inputType="textPersonName"
+            android:shadowColor="#00BCD4"
+            android:textColorHighlight="@color/colorPrimaryDark"
+            android:textColorHint="@color/hintcolor"
+            android:textColorLink="@color/colorPrimaryDark"
+            tools:layout_editor_absoluteX="79dp"
+            tools:layout_editor_absoluteY="125dp" />
+
+        <EditText
+            android:id="@+id/make_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#00BCD4"
+            android:textColor="#000000"
+            android:ems="10"
+            android:hint="인원 수"
+            android:inputType="number"
+            android:shadowColor="#00BCD4"
+            android:textColorHighlight="@color/colorPrimaryDark"
+            android:textColorHint="@color/hintcolor"
+            android:textColorLink="@color/colorPrimaryDark"
+            tools:layout_editor_absoluteX="79dp"
+            tools:layout_editor_absoluteY="125dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/make_mkbtn"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/intromain_btn"
+                android:text="위드 생성"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/make_cancelbtn"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/intromain_btn"
+                android:backgroundTint="#9A9A9A"
+                android:text="취소"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+</LinearLayout>

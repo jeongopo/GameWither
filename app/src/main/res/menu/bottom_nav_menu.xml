@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/withmain_icon"
+        android:title="위더찾기"
+        />
+
+    <item
+        android:id="@+id/navigation_dashboard"
+        android:icon="@drawable/withmemory_icon"
+        android:title="위드메모리" />
+
+    <item
+        android:id="@+id/navigation_notifications"
+        android:icon="@drawable/mypage_icon"
+        android:title="마이페이지" />
+
+</menu>

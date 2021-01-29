@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "996148564456",
+    "firebase_url": "https://gamewither-1fc89.firebaseio.com",
+    "project_id": "gamewither-1fc89",
+    "storage_bucket": "gamewither-1fc89.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:996148564456:android:97010d9ef636d77123d45d",
+        "android_client_info": {
+          "package_name": "com.example.gamewither"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "996148564456-t2m4ao5ah3j4k3ac4c7f96ius50c0uqg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYLM8X6yVg2AHYBkmi31TtRqzJAs1-1qA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "996148564456-t2m4ao5ah3j4k3ac4c7f96ius50c0uqg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
